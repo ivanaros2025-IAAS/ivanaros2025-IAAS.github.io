@@ -1,239 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Perfil GitHub — Profesional</title>
-  <meta name="description" content="Perfil profesional para GitHub / GitHub Pages: resumen, habilidades, proyectos destacados y contacto." />
-
-  <!-- Fuentes y iconos -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-somehash" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <style>
-    :root{
-      --bg:#0f1724;  /* oscuro */
-      --card:#0b1220;
-      --muted:#9aa4b2;
-      --accent:#7c3aed; /* púrpura */
-      --glass: rgba(255,255,255,0.04);
-      --radius:14px;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071026 0%, #081226 60%);}
-    a{color:inherit}
-
-    .container{max-width:980px;margin:36px auto;padding:28px}
-    .card{background:linear-gradient(180deg,var(--card), rgba(8,10,18,0.6));border-radius:var(--radius);padding:22px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);}
-
-    .header{display:flex;gap:18px;align-items:center}
-    .avatar{width:110px;height:110px;border-radius:18px;flex:0 0 110px;overflow:hidden;border:2px solid rgba(255,255,255,0.04)}
-    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-
-    .name{font-size:20px;font-weight:700;color:#fff}
-    .title{color:var(--muted);margin-top:6px;font-size:14px}
-    .bio{margin-top:12px;color:var(--muted);line-height:1.4}
-
-    .actions{margin-left:auto;display:flex;gap:8px}
-    .btn{background:var(--glass);border-radius:10px;padding:8px 12px;font-weight:600;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
-    .btn.primary{background:linear-gradient(90deg,var(--accent),#4f46e5);color:white;border:none}
-
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
-
-    /* proyectos */
-    .projects{display:grid;gap:12px}
-    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);display:flex;flex-direction:column}
-    .project h4{margin:0;font-size:15px}
-    .project p{margin:8px 0 0 0;color:var(--muted);font-size:13px}
-
-    /* skills */
-    .panel{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:14px;border-radius:12px}
-    .section-title{font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .skill{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);font-weight:600;font-size:13px}
-
-    .meta{display:flex;gap:8px;margin-top:14px}
-    .meta .stat{flex:1;background:transparent;padding:10px;border-radius:10px;text-align:center}
-    .meta .stat strong{display:block;font-size:18px}
-    .contact{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-
-    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
-
-    /* responsive */
-    @media (max-width:880px){
-      .grid{grid-template-columns:1fr;}
-      .avatar{width:84px;height:84px;border-radius:12px}
-      .container{margin:18px;padding:16px}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Bulldozer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
-  <main class="container">
-    <div class="card">
-      <div class="header">
-        <div class="avatar" id="avatar-wrap">
-          <!-- Reemplaza la URL o deja en blanco para usar iniciales -->
-          <img id="avatar" src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="avatar" />
-        </div>
-        <div>
-          <div class="name" id="display-name">Tu Nombre</div>
-          <div class="title" id="display-title"> • Ingeniero Industrial • Especialista en mejoras de procesos</div>
-          <div class="bio" id="display-bio">Soy Ingeniero con foco en crear soluciones claras, mantenibles y con impacto. Me concentro en proyectos industriales. Aquí muestro mis proyectos más relevantes y habilidades.</div>
-        </div>
-        <div class="actions">
-          <a id="github-link" class="btn" href="#" target="_blank" rel="noopener">Ver GitHub</a>
-          <a id="resume-link" class="btn primary" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" style="margin-right:8px"></i>CV / Resumen</a>
-        </div>
-      </div>
+    <div class="container">
+        <h1>Evaluación Fundamentos Bulldozer 🚜</h1>
+        <p>Complete todas las secciones y presione <strong>Enviar evaluación</strong>.</p>
+        <hr>
 
-      <div class="grid">
-        <section>
-          <div class="projects">
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <h3 style="margin:0">Proyectos destacados</h3>
-              <small style="color:var(--muted)">Actualizado automáticamente</small>
+        <!--DATOS DEL ALUMNO-->
+        <h2>Datos del Alumno</h2>
+        <label>Nombre Trabajador: <input type="text" id="trabajador"></label>
+        <label>Nombre Instructor: <input type="text" id="instructor" value="Ivan Aros"></label>
+        <label>Fecha: <input type="date" id="fecha"></label>
+        <hr>
+
+        <form id="evalForm">
+            <!-- SECCIÓN 1 -->
+            <div class="seccion">
+                <h2>Sección 1 — Selección múltiple</h2>
+                <div id="seccion1"></div>
             </div>
 
-            <!-- Lista de proyectos tirada por JS -->
-            <div id="projects-list">
-              <div class="project">
-                <h4>Título de proyecto</h4>
-                <p>Descripción breve: qué hace, por qué importa, tech stack y link.</p>
-              </div>
+            <!-- SECCIÓN 2 -->
+            <div class="seccion">
+                <h2>Sección 2 — Verdadero / Falso</h2>
+                <div id="seccion2"></div>
             </div>
 
-          </div>
-
-          <div style="margin-top:16px" class="panel">
-            <div class="section-title">Resumen</div>
-            <p style="margin-top:10px;color:var(--muted);line-height:1.45"> más de 10 años de experiencia en diversas áreas de producción y control de calidad. 
-- Creciendo en área de Formación de Personas,interés en el aprendizaje permanente y en la mejora continua.</p>
-
-            <div style="margin-top:12px" class="section-title">Tecnologías principales</div>
-            <div class="skills" id="skills-list">
-              <div class="skill">JavaScript</div>
-              <div class="skill">TypeScript</div>
-              <div class="skill">React</div>
-              <div class="skill">Node.js</div>
-              <div class="skill">Python</div>
-              <div class="skill">Docker</div>
-            </div>
-          </div>
-        </section>
-
-        <aside>
-          <div class="panel">
-            <div class="section-title">Estadísticas</div>
-            <div class="meta" id="stats">
-              <div class="stat"><strong id="repos-count">—</strong><span class="muted">Repos</span></div>
-              <div class="stat"><strong id="stars-count">—</strong><span class="muted">Stars</span></div>
-              <div class="stat"><strong id="followers-count">—</strong><span class="muted">Followers</span></div>
+            <!-- SECCIÓN 3 -->
+            <div class="seccion">
+                <h2>Sección 3 — Identificación de partes (1–7)</h2>
+                <div id="seccion3"></div>
             </div>
 
-            <div style="margin-top:12px" class="section-title">Contacto</div>
-            <div class="contact">
-              <a id="email-link" href="#" class="btn">✉️ Email</a>
-              <a id="linkedin-link" href="#" class="btn">in / linkedin</a>
-              <a id="website-link" href="#" class="btn">Personal website</a>
+            <!-- SECCIÓN 4 -->
+            <div class="seccion">
+                <h2>Sección 4 — Identificación visual (1–8)</h2>
+                <div id="seccion4"></div>
             </div>
 
-            <div style="margin-top:12px" class="section-title">Etiquetas</div>
-            <div style="margin-top:8px" id="tags" class="skills">
-              <div class="skill">Open Source</div>
-              <div class="skill">Mentoría</div>
-              <div class="skill">Arquitectura</div>
+            <div class="botones">
+                <button type="button" id="enviarBtn">Enviar Evaluación</button>
+                <button type="button" id="calcularBtn">Calcular Porcentaje</button>
             </div>
-          </div>
 
-          <div style="margin-top:12px;text-align:center;color:var(--muted);font-size:12px">Haz el Bien sin mirar a quien </div>
-        </aside>
-      </div>
-
-      <footer>Hecho con ❤️ — La habilidad de estar en el momento presente es un componente principal de la salud mental.</footer>
+            <div id="resultado"></div>
+        </form>
     </div>
-  </main>
 
-  <script>
-    /* === CONFIGURA AQUÍ (REEMPLAZA con tu usuario) === */
-    const GITHUB_USERNAME = 'ivanaros2025-IAAS'; // <- cambia esto
-    const AVATAR = ''; // si quieres forzar avatar: 'https://...jpg'
-    const DISPLAY_NAME = 'Iván Aros';
-    const TITLE = 'Ingeniero Industrial • Frontend • APIs';
-    const SHORT_BIO = 'Profesional con formación técnica Gesttón y Control Calidad e Ingeniería Industrial, creación y desarrollo de soluciones. En GitHub exploro automatización, aplicaciones web y proyectos prácticos orientados al aprendizaje y la eficiencia.';
-    const RESUME_URL = '#';
-    const LINKS = {
-      email: 'mailto:tu@email.com',
-      linkedin: 'https://www.linkedin.com/in/iván-aros-36b5ba241',
-      website: '#'
-    };
-
-    /* === NO TOCAR (a menos que sepas lo que haces) === */
-    document.getElementById('display-name').textContent = DISPLAY_NAME;
-    document.getElementById('display-title').textContent = TITLE;
-    document.getElementById('display-bio').textContent = SHORT_BIO;
-    document.getElementById('resume-link').href = RESUME_URL;
-    document.getElementById('email-link').href = LINKS.email;
-    document.getElementById('linkedin-link').href = LINKS.linkedin;
-    document.getElementById('website-link').href = LINKS.website;
-
-    if(AVATAR) document.getElementById('avatar').src = AVATAR;
-
-    const githubLink = document.getElementById('github-link');
-    githubLink.href = `https://github.com/${GITHUB_USERNAME}`;
-
-    // Fetch public data (repos, stars, followers)
-    async function fetchGithubData(){
-      if(!GITHUB_USERNAME || GITHUB_USERNAME === 'your-username') return;
-      try{
-        const userRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`);
-        if(!userRes.ok) throw new Error('no user');
-        const user = await userRes.json();
-        document.getElementById('avatar').src = user.avatar_url || document.getElementById('avatar').src;
-        document.getElementById('repos-count').textContent = user.public_repos;
-        document.getElementById('followers-count').textContent = user.followers;
-
-        // repos and stars
-        const reposRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=pushed`);
-        const repos = await reposRes.json();
-        const stars = repos.reduce((s,r)=> s + (r.stargazers_count||0), 0);
-        document.getElementById('stars-count').textContent = stars;
-
-        // fill projects (top 6 by stargazers then recent)
-        const sorted = repos.slice().sort((a,b)=> (b.stargazers_count - a.stargazers_count) || (new Date(b.pushed_at) - new Date(a.pushed_at)) ).slice(0,6);
-        const list = document.getElementById('projects-list');
-        list.innerHTML = '';
-        for(const r of sorted){
-          const div = document.createElement('div'); div.className='project';
-          const h = document.createElement('h4');
-          const a = document.createElement('a'); a.href = r.html_url; a.target='_blank'; a.rel='noopener'; a.textContent = r.name;
-          h.appendChild(a);
-          const p = document.createElement('p'); p.textContent = (r.description || 'Sin descripción') + ' • ' + (r.language || '—');
-          div.appendChild(h); div.appendChild(p);
-          list.appendChild(div);
-        }
-
-      }catch(e){
-        console.warn('GitHub fetch error', e);
-      }
-    }
-
-    fetchGithubData();
-
-    // Utility: export as README.md (simple)
-    function generateReadme(){
-      const md = `# ${DISPLAY_NAME}\n\n${SHORT_BIO}\n\nVisita mi perfil: https://github.com/${GITHUB_USERNAME}`;
-      return md;
-    }
-
-    // Copiar README al portapapeles cuando se presione Ctrl+Shift+C
-    window.addEventListener('keydown', (e)=>{
-      if(e.ctrlKey && e.shiftKey && e.key.toLowerCase()==='c'){
-        navigator.clipboard.writeText(generateReadme()).then(()=>{
-          alert('README Markdown copiado al portapapeles — pega en README.md de tu repo de perfil.');
-        }).catch(()=>{});
-      }
-    });
-  </script>
+    <script src="app.js"></script>
 </body>
 </html>
